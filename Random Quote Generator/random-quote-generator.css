@@ -1,0 +1,60 @@
+
+html{
+	/*give a backgrounf color to the entire page*/
+	background-color: #FF404C;
+	/*give a standard font family for the rentire page. */
+	font-family: sans-serif;
+	/*give a standard font size for the entire page.*/
+	font-size: 10px;
+}
+
+h1{
+	/*center allign the heading*/
+	text-align: center;
+	/*increase the font size*/
+	font-size: 3rem;
+	/*change the font color*/
+	color: #E7DACB;	
+	/*ilalicize the heading*/
+	font-style: italic;
+}
+
+.quote-container{
+	/*add a border to the entrie div*/
+	border-color: #E7DACB;
+	border-width: 0.2rem;
+	border-style: solid;
+	/*center allign everyhting in the div*/
+	text-align: center;
+	/*give a height and max width to the div*/
+	max-width: 120rem;
+	height:30rem;
+	/*add a padding between the content in the div and 
+	the border*/
+	padding: 1rem;
+	/*set margin to auto to out the div in the center*/
+	margin: auto;
+}
+
+#btn{
+	/*increase the size of the button*/
+	font-size: 1.5rem;
+}
+
+.quote-display{
+	padding:1.5rem;
+	margin: auto;
+}
+
+#random-quote{
+	font-size: 5rem;
+	font-family: 'Droid Serif', serif;
+}
+
+#character{
+	font-size: 2rem;
+	text-align: right;
+}
+.hide-me{
+	display: none;
+}

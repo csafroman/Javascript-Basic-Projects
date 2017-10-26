@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- the head of the document -->
+<head>
+	<!-- all the relevant meta tags are written here-->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale = 1"/>
+	<!-- css stylesheet link -->
+	<link rel="stylesheet" type="text/css" href="random-quote-generator.css">
+	<!-- google fonts links -->
+	<link href="https://fonts.googleapis.com/css?family=Droid+Serif:400i" rel="stylesheet">
+	<!-- this is the title of the page -->
+	<title>Random Quote Generator</title>
+</head>
+<!-- the body of the page begins here -->
+<body>
+	<!-- div containing the heading of the webapge -->
+	<div>
+		<h1>Random Quote Generator</h1>
+	</div>
+	<!-- div containing the button to be clicked and the area where the random quote will be displayed -->
+	<div class="quote-container">	
+		<!-- button which needs to be clicked for the random quote to be generated -->
+		<button id="btn" onclick="newQuote()">Generate a Random Quote</button>
+		<div class="quote-display">
+			<!-- this is where the randomly generated quote will be displayed -->
+			<q id="random-quote"></q>
+			<!-- this is where the coreoponding name of the character who has said the quote will be displayed -->
+			<p id="character"></p>
+		</div>
+	</div>	
+	<!-- script tag containing the link of the javascript file for the page -->
+	<script type="text/javascript" src="random-quote-generator.js">
+	</script>
+</body>
+</html>
