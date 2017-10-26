@@ -28,7 +28,9 @@ h1{
 	text-align: center;
 	/*give a height and max width to the div*/
 	max-width: 120rem;
-	height:30rem;
+	/*give a minimum height to the div so that it 
+	automatically adjusts when the screen size is changed but it does not go below a certain limit.*/
+	min-height: 30rem;
 	/*add a padding between the content in the div and 
 	the border*/
 	padding: 1rem;
