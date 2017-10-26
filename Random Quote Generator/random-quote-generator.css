@@ -64,3 +64,11 @@ h1{
 	text-align: center;
 	max-width: 120rem;
 }
+
+.social-media span{
+	padding: 1rem;
+}
+
+.social-media span a{
+	font-size: 2rem;
+}
