@@ -42,6 +42,8 @@ h1{
 }
 
 .quote-display{
+	/*add a padding to the the div so that there is some 
+	space between the content and border*/ 
 	padding:1.5rem;
 	margin: auto;
 }
@@ -55,6 +57,10 @@ h1{
 	font-size: 2rem;
 	text-align: right;
 }
-.hide-me{
-	display: none;
+
+.social-media{
+	margin: auto;
+	padding: 2rem;
+	text-align: center;
+	max-width: 120rem;
 }
