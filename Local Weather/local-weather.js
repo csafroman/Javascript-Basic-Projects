@@ -1,3 +1,4 @@
+// define global variables.
 let lat;
 let long;
 let tempUnit = "C";
@@ -5,14 +6,14 @@ let tempUnit = "C";
 /* write a function to get the current location of the user in terms of 
  latitude and longitude */
 function geoLocation(){
-    if(navigator.geolocation){
+    if(navigator.geolocation){ 
         navigator.geolocation.getCurrentPosition(function(position){
             lat = position.coords.latitude;
             long = position.coords.longitude;
             localWeather(lat, long);
         });
     } else {
-        alert("Geolcation not supported");
+        alert("Geolcation permission denied");
     }    
 }
 
