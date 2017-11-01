@@ -13,10 +13,15 @@ body h1{
 body div{
 	text-align: center;
 	font-size: 4rem;
-	margin: 2rem;
+	margin-top: 2rem;
 }
 
 #descrip{
 	text-transform: uppercase;
 	font-size: 3.5rem;
+}
+
+p {
+	text-align: center;
+	margin: 0;
 }

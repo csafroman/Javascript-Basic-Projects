@@ -35,15 +35,35 @@ function localWeather(lat, long){
 function renderHTML(data){
     /* capture the respective html tags, where the data is suppose to be 
     rendered, in seperate variables */
-    let city = document.getElementById('city');
+    let place = document.getElementById('place');
     let icon = document.getElementById('icon');
     let descrip = document.getElementById('descrip');
     let temp = document.getElementById('temp');
 
-    /* Get the specific data desirted from the api and assign to the inner
-    HTMl of the variables. */
-    city.innerHTML = data.name + ", " + data.sys.country;
-    icon.innerHTML = "<img src= "+data.weather[0].icon+ ">";
-    descrip.innerHTML =  data.weather[0].description;
-    temp.innerHTML = Math.round(data.main.temp * 10) /10 + " °" + tempUnit;
+    // Assign the specific data desired from the api to variables.
+    let cityData = data.name;
+    let countryData = data.sys.country;
+    let iconData =  data.weather[0].icon;
+    let descripData = data.weather[0].description;
+    let tempData = Math.round(data.main.temp * 10) / 10;
+
+    // add the data variables to the HTML of the specific tags
+    place.innerHTML = cityData + ", " + countryData;
+    icon.innerHTML = "<img src= "+ iconData + ">";
+    descrip.innerHTML =  descripData;
+    temp.innerHTML = Math.round(tempData * 10) / 10 + " °" + tempUnit;
+
+// add a event listener to toggle the temperature from celcius to fahrenheit.
+temp.addEventListener("click", function(){
+    if (tempUnit === "C"){
+        tempUnit = "F";
+        tempData = tempData * (9/5) + 32;
+        temp.innerHTML = tempData + " " + tempUnit ;
+    } else {
+        tempUnit = "C";
+        tempData = (tempData - 32) / (9/5);
+        temp.innerHTML = tempData + " °" + tempUnit;
+    }
+})
+
 }
