@@ -6,6 +6,17 @@ html{
 }
 
 body h1{
-	font-size: 5.5rem;
+	font-size: 5.9rem;
 	text-align: center;
+}
+
+body div{
+	text-align: center;
+	font-size: 4rem;
+	margin: 2rem;
+}
+
+#descrip{
+	text-transform: uppercase;
+	font-size: 3.5rem;
 }
