@@ -59,11 +59,11 @@ temp.addEventListener("click", function(){
     if (tempUnit === "C"){
         tempUnit = "F";
         tempData = tempData * (9/5) + 32;
-        temp.innerHTML = tempData + " " + tempUnit ;
+        temp.innerHTML = Math.round(tempData * 10) / 10 + " " + tempUnit ;
     } else {
         tempUnit = "C";
         tempData = (tempData - 32) / (9/5);
-        temp.innerHTML = tempData + " °" + tempUnit;
+        temp.innerHTML = Math.round(tempData * 10) / 10 + " °" + tempUnit;
     }
 })
 
