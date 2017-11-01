@@ -21,7 +21,11 @@ body div{
 	font-size: 3.5rem;
 }
 
-p {
+#temp:hover{
+	cursor: pointer;
+}
+
+p{
 	text-align: center;
 	margin: 0;
 }
