@@ -1,0 +1,49 @@
+html {
+	font-size: 10px;
+	background-color: #0E38B1;
+	color: white;
+	font-family: 'Exo', sans-serif;
+}
+
+body{
+	text-align: center;
+}
+
+h1{
+	font-size: 4rem;
+	color: #FBECCF;
+}
+
+section{
+	padding:1rem;
+}
+
+input{
+	background-color: #0E38B1;
+	outline: none;
+	border-style: solid;
+	border-color: white;
+	border-width: 0.2rem;
+	width: 20rem;
+	font-size: 1.5rem;
+	color: white;
+	padding: 0.4rem;
+}
+
+a{
+	text-decoration: none;
+	text-align: left;
+	color: white;
+}	
+
+.random{
+	color: #FBECCF;
+	font-size: 2rem;
+}
+
+.content{
+	border-style: solid;
+	border-color: #FBECCF;
+	margin: 1rem;
+	padding: 1rem;
+}
