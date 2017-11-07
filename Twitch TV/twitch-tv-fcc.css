@@ -1,0 +1,40 @@
+html{
+	background-color: #D3E8E1;
+	font-size: 10px;
+	font-family: 'Exo', sans-serif;
+	text-align: center;
+	color: #E44A66;
+}
+
+h1{
+	font-size: 4.5rem;
+}
+
+div{
+	text-align: center;
+}
+
+.userData{
+	margin: auto;
+	table-layout: fixed;
+	font-size: 2rem;
+	color: black;
+}
+
+tr{
+	min-height: 10rem;
+	padding: auto;
+}
+
+td{
+	max-width: 30rem;
+}
+
+img{
+	max-width: 50%;
+	max-height: 50%;
+}
+
+a{
+	text-decoration: none;
+}

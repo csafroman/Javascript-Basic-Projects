@@ -35,7 +35,7 @@ function fetchResults(){
         return data.json();
     })
     .then(function(value){
-    	console.log(value);
+    	// console.log(value);
     	renderHTML(value);
     })
 }
