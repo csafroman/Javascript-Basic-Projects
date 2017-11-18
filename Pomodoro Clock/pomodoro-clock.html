@@ -1,26 +1,53 @@
+<!-- Pomodoro Clock - FreeCodeCamp Project
+Author- Chetan Singrodia -->
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-	<meta charset="utf-8">
-
-	<link rel="stylesheet" type="text/css" href="pomodoro-clock.css">
-
+	<!-- this is the title of the page -->
 	<title>Pomodoro Clock FCC</title>
+	<!-- these are the meta tags -->
+	<meta name = 'viewport' content = 'width = device-width, initial-scale = 1.0'>
+	<!-- link to the css stylesheet -->
+	<link rel="stylesheet" type="text/css" href="pomodoro-clock.css">
+	<!-- google font link -->
+	<link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
+	<!-- link for font awesome icons -->
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
 </head>
-<!-- the body of the page begins here -->
+<!-- body of the page begins here -->
 <body>
+	<!-- heading of the page -->
+	<h1>FCC Pomodoro Clock</h1>
 
-
-
-
-
-
-
-
-
-
-
+	<section>
+		<!-- section to change the break time -->
+		<div id="breakLength">
+			<p>BREAK LENGTH</p>
+			<button value="-" class="changeCounter break"><i class="fa fa-minus"></i></button>
+			<span>5</span>
+			<button value="+" class="changeCounter break"><i class="fa fa-plus"></i></button>
+		</div>
+		<!-- section to change the session time -->
+		<div id="sessionLength">
+			<p>SESSION LENGTH</p>
+			<button value="-" class="changeCounter session"><i class="fa fa-minus"></i></button>
+			<span>25</span>
+			<button value="+" class="changeCounter session"><i class="fa fa-plus"></i></button>
+		</div>
+		<!-- section with the actual timer -->
+		<div id="timer">
+			<h3>Session</h3>
+			<p>25:00</p>
+		</div>
+		<div id="timerButtons">
+			<button id="start">Start</button>
+			<button id="stop">Stop</button>
+			<button id="reset">Reset</button>
+		</div>
+	</section>
+	<!-- link to javasscript file -->
 	<script type="text/javascript" src="pomodoro-clock.js"></script>
 </body>
 </html>
