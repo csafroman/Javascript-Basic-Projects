@@ -44,7 +44,7 @@ var countdown = function(len, type){
 		var secs = Math.ceil((diff % (1000*60)) / 1000);
 		document.querySelector('#timer p').innerHTML = `${mins}:${secs}`;
 
-		add an event listener on the stop button to puase the timer.
+		// add an event listener on the stop button to puase the timer.
 		var stopBtn = document.querySelector('#stop');
 		stopBtn.addEventListener('click', function(e){
 			console.log(e);
@@ -67,7 +67,9 @@ var countdown = function(len, type){
 		}
 
 	},1000);
-// }add an event listener on the start button to start the timer
+}
+
+// add an event listener on the start button to start the timer
 var startBtn = document.querySelector('#start');
 startBtn.addEventListener('click', function(){
 	// calculate the millisecond value of the time being shown in the timer so which be used as a parameter for the countdown function
