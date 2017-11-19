@@ -1,26 +1,32 @@
 html{
 	font-size: 10px;
 	text-align: center;
+	background-color: #C5BEAA;
 }
 
 h1{
 	font-size: 3rem;
+	color: #B32A48;
 }
 
 div{
 	padding: .5rem;
 }
 
+.calci{
+	
+}
+
 input{
-	width: 18rem;
+	width: 35rem;
 	height: 2.5rem;
 	text-align: right;
 	font-size: 2rem;
 }
 
 button{
-	font-size: 2rem;
-	width: 4rem;
-	height: 4rem;
+	font-size: 2.7rem;
+	width: 8rem;
+	height: 8rem;
 	margin: .3rem;
 }

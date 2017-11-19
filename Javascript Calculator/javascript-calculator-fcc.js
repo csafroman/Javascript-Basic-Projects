@@ -36,7 +36,7 @@ function doMath(){
 	} else if (this.value === "CE"){
 		mathDone = false;
 		mathArr.pop();
-		resetInput();
+		input.value = mathArr.join('');
 		console.log(mathArr);
 	} else if (this.value === 'equal'){
 		mathDone = true;
