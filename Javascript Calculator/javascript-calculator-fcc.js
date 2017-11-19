@@ -2,6 +2,7 @@ var button = document.querySelectorAll('button');
 var mathArr = [];
 var mathStr = '';
 var ans;
+var mathDone = false;
 var input = document.querySelector('input');
 
 button.forEach(function(element){
@@ -9,26 +10,41 @@ button.forEach(function(element){
 })
 
 function doMath(){
-	if (this.value === 'equal'){
-		if(mathArr[mathArr.length-1] === '+' || mathArr[mathArr.length-1] === '/' || mathArr[mathArr.length-1] === '*' || mathArr[mathArr.length-1] === '-'){
+	// console.log(mathArr);
+	if (this.className === 'numb'){
+		if(mathDone === true){
+			mathArr.pop();
+			resetInput();
+		}
+		mathArr.push(this.innerHTML);
+		input.value += this.value;
+		console.log(mathArr);
+		mathDone = false;
+	} else if (this.className === 'operator'){
+		mathDone = false;
+		if (mathArr[mathArr.length-1] === '+' || mathArr[mathArr.length-1] === '/' || mathArr[mathArr.length-1] === '*' || mathArr[mathArr.length-1] === '-' ||mathArr[mathArr.length-1] === '.'){
 			mathArr.pop();
 		}
+		mathArr.push(this.innerHTML);
+		input.value += this.value;
+		console.log(mathArr)
+	} else if (this.value === "AC"){
+		mathDone = false;
+		resetArr();
+		resetInput();
+		console.log(mathArr);
+	} else if (this.value === "CE"){
+		mathDone = false;
+		mathArr.pop();
+		resetInput();
+		console.log(mathArr);
+	} else if (this.value === 'equal'){
+		mathDone = true;
 		mathStr = mathArr.join('');
 		ans = eval(mathStr);
 		ans = ans.toFixed(2);
 		input.value = ans;
 		mathArr = [ans];
-	} else if (this.value === "AC"){
-		resetArr();
-		resetInput();
-	} else if (this.value === "CE"){
-		resetInput();
-		clearEntry();
-	} else {
-		resetInput();	
-		mathArr.push(this.innerHTML);
-		console.log(mathArr);
-		input.value += this.value;
 	}
 }
 
@@ -41,23 +57,5 @@ function resetArr(){
 function resetInput(){
 	input.value = '';
 }
-
-// function to be executed when CE is pressed.
-function clearEntry(){
-	mathArr.pop();
-}
-
-// function which will be executed when equal is pressed.
-// function equal(){
-// 	console.log(mathArr);
-// 	console.log(mathArr[mathArr.length-1]);
-// 	if(mathArr[mathArr.length-1] === '+' || mathArr[mathArr.length-1] === '/' || mathArr[mathArr.length-1] === '*' || mathArr[mathArr.length-1] === '-'){
-// 		mathArr.pop();
-// 	}
-// 	mathStr = mathArr.join('');
-// 	ans = eval(mathStr);
-// 	ans = ans.toFixed(2);
-// 	input.value = ans;
-// }
 
 
