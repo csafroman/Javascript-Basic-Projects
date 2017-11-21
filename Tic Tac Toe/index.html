@@ -11,10 +11,43 @@ Author- Chetan Singrodia -->
 	<meta name = 'viewport' content = 'width = device-width, initial-scale = 1.0'>
 	<!-- link of the css stylesheet -->
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<!-- google font tags -->
+	<link href="https://fonts.googleapis.com/css?family=Rye" rel="stylesheet">
 </head>
 <!-- body of the page begins here -->
 <body>
-	
+	<h1>Tic Tac Toe!</h1>
+	<div class="chooseChar">
+		<label for="X">X</label>
+		<input type="radio" name="char" value="X" id="X" checked="true">
+		<label>O</label>
+		<input type="radio" name="char" value="O" id="O"><br>
+		<button id="beginBtn"> Lets begin!</button>
+	</div>
+	<div class="board">	
+		<table>
+			<tr>
+				<td class="cells" id="0"></td>
+				<td class="cells" id="1"></td>
+				<td class="cells" id="2"></td>
+			</tr>
+			<tr>
+				<td class="cells" id="3"></td>
+				<td class="cells" id="4"></td>
+				<td class="cells" id="5"></td>
+			</tr>
+			<tr>
+				<td class="cells" id="6"></td>
+				<td class="cells" id="7"></td>
+				<td class="cells" id="8"></td>
+			</tr>
+		</table>
+	</div>
+	<div class="endGame">
+		<div class="text"></div>
+	</div>
+		
+	<button class="replayBtn">Replay the game!</button>
 
 
 
